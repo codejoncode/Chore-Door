@@ -48,7 +48,6 @@ const randomChoreDoorGenerator = () => {
 // randomChoreDoorGenerator();
 
 const isBot = (door) => {
-    console.log(door.src);
     if (door.src === botDoorPath){
         return true; 
     } else {
