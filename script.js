@@ -1,0 +1,1 @@
+let doorImage1 = document.getElementById("door1");
