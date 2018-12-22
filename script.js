@@ -91,7 +91,9 @@ const gameOver = (status) => {
         startButton.innerHTML = 'Game over! Play again?'
     }
     currentlyPlaying = false; 
-
+    startButton.onclick = () => {
+        startRound(); 
+    }
 };
 
 const startRound = () => {
@@ -104,13 +106,7 @@ const startRound = () => {
     randomChoreDoorGenerator();
 }
 
-if (currentlyPlaying === false){
-    console.log(currentlyPlaying);
-    startButton.onclick = () => {
-        console.log("clicked start button")
-        startRound(); 
-    }
-}
+
 
 randomChoreDoorGenerator();
 // startRound(); 
